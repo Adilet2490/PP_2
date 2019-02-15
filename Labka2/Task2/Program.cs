@@ -1,42 +1,37 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.IO;
+
 namespace Task2
 {
     class Program
     {
-        public static bool Prime(int x)
-        {
-            if (x == 1 || x == 0) return false;
-            for (int i = 2; i < Math.Sqrt(x); i++)
-            {
-                if (x % i == 0) return false;
-            }
-            return true;
-        }
         static void Main(string[] args)
         {
-            string s = Console.ReadLine();
-            File.WriteAllText(@"C:\Users\Adilet\Documents\Visual Studio 2017\Backup Files\Labka2\input.txt", s);
-            FileStream fs = new FileStream(@"C:\Users\Adilet\Documents\Visual Studio 2017\Backup Files\Labka2\input.txt", FileMode.OpenOrCreate, FileAccess.Read);
-            StreamReader sr = new StreamReader(fs);
-            string[] s1 = sr.ReadLine().Split();
-
-            sr.Close();x`
+            string s = Console.ReadLine();//вводим строку
+            File.WriteAllText(@"C:\Users\Adilet\Documents\Visual Studio 2017\Backup Files\PP_2\input.txt", s);//записываем ее в файл
+            FileStream fs = new FileStream(@"C:\Users\Adilet\Documents\Visual Studio 2017\Backup Files\PP_2\input.txt", FileMode.Open, FileAccess.Read);// файл
+            StreamReader sr = new StreamReader(fs);//переводим на понятный язык
+            string[] str = sr.ReadToEnd().Split();//передаем все содержание файла в str[]
+            sr.Close();
             fs.Close();
-            FileStream fs1 = new FileStream(@"C:\Users\Adilet\Documents\Visual Studio 2017\Backup Files\Labka2\output.txt", FileMode.OpenOrCreate, FileAccess.Write);
-            StreamWriter sw = new StreamWriter(fs1);
-            for (int i = 0; i < s1.Length; i++)
+            FileStream fs1 = new FileStream(@"C:\Users\Adilet\Documents\Visual Studio 2017\Backup Files\PP_2\output.txt", FileMode.Open, FileAccess.Write);//записываем все в output file
+            StreamWriter sw = new StreamWriter(fs1);//*
+            for (int i = 0; i < str.Length; i++)
             {
-                if (Prime(int.Parse(s1[i])) == true)  sw.WriteLine("Yes"); 
-                else sw.WriteLine("No");
-            }                                                                                                                                                                                                                                                                    
+                int cnt = 0;//счетчик для простых чисел
+                for (int j = 2; j <= Math.Sqrt(int.Parse(str[i])); j++)
+                {
+                    if (int.Parse(str[i]) % j == 0) cnt++;//ищем все делители числа
+                }
+                if (cnt == 0 && int.Parse(str[i]) != 1) sw.Write(str[i] + " ");//если выполняется условия то выводим все в файл
+            }
             sw.Close();
             fs1.Close();
-        
         }
     }
 }
+
