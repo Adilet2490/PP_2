@@ -15,7 +15,7 @@ namespace Task3
                 for (int j = i, k = i + arsz; j <= i && k < arsz * 2; j++, k++)
                 {
                     arr2[j] = arr1[i];//заполняю массив
-                    arr2[k] = arr1[i];//элементами 
+                    arr2[k] = arr1[i];//элементами  
                 }
             }
             Array.Sort(arr2);//сортирую его 
