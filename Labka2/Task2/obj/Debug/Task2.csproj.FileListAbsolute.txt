@@ -1,0 +1,7 @@
+C:\Users\Adilet\Documents\Visual Studio 2017\Backup Files\Labka2\Task2\bin\Debug\Task2.exe.config
+C:\Users\Adilet\Documents\Visual Studio 2017\Backup Files\Labka2\Task2\bin\Debug\Task2.exe
+C:\Users\Adilet\Documents\Visual Studio 2017\Backup Files\Labka2\Task2\bin\Debug\Task2.pdb
+C:\Users\Adilet\Documents\Visual Studio 2017\Backup Files\Labka2\Task2\obj\Debug\Task2.csprojAssemblyReference.cache
+C:\Users\Adilet\Documents\Visual Studio 2017\Backup Files\Labka2\Task2\obj\Debug\Task2.csproj.CoreCompileInputs.cache
+C:\Users\Adilet\Documents\Visual Studio 2017\Backup Files\Labka2\Task2\obj\Debug\Task2.exe
+C:\Users\Adilet\Documents\Visual Studio 2017\Backup Files\Labka2\Task2\obj\Debug\Task2.pdb

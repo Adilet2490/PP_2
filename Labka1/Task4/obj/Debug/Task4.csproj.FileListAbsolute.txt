@@ -1,0 +1,6 @@
+C:\Users\Adilet\Documents\Visual Studio 2017\Backup Files\Labka1\Task4\bin\Debug\Task4.exe.config
+C:\Users\Adilet\Documents\Visual Studio 2017\Backup Files\Labka1\Task4\bin\Debug\Task4.exe
+C:\Users\Adilet\Documents\Visual Studio 2017\Backup Files\Labka1\Task4\bin\Debug\Task4.pdb
+C:\Users\Adilet\Documents\Visual Studio 2017\Backup Files\Labka1\Task4\obj\Debug\Task4.csproj.CoreCompileInputs.cache
+C:\Users\Adilet\Documents\Visual Studio 2017\Backup Files\Labka1\Task4\obj\Debug\Task4.exe
+C:\Users\Adilet\Documents\Visual Studio 2017\Backup Files\Labka1\Task4\obj\Debug\Task4.pdb
